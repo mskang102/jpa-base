@@ -20,6 +20,7 @@ public class JpaEx1 {
             // 영속성 컨텍스트 등록 1차캐시
             em.persist(member);
             // 영속성 컨텍스트로 인해 select 쿼리는 나오지않고 1차캐시에서 찾음
+            
             Member result =  em.find(Member.class,101L);
             // jpa는 값을 변경하면 자동으로 인지해서 update를 함, persist를 쓰면 헷갈릴수있음
             result.setName("changeHello");
