@@ -10,7 +10,7 @@ import java.util.Date;
 * */
 @Entity
 public class Member {
-    @Id
+    @Id // @GeneratedValue(strategy = GenerationType.Auto ) 자동할당
     private Long id;
     @Column(name = "name",  updatable = false)
     private String username;
