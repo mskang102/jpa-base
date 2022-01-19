@@ -15,7 +15,7 @@ public class Member1 {
 
     private String name;
 
-    @ManyToOne  /* n개 필드 사용 */
+    @ManyToOne  /* n개 필드 사용  */
     @JoinColumn(name = "team_id")
     private Team team;
 
