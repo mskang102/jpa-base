@@ -16,7 +16,7 @@
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
             <!-- Entity 매핑된 테이블을 만들어줌(기존에 존재하면 drop->create) create , create-drop, update, validate-->
-            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
         </properties>
     </persistence-unit>
 </persistence>
